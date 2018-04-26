@@ -1,23 +1,24 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "dokr",
+  "version": "0.0.1",
+  "description": "Start/stop docker containers from tray menu",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/diego3g/dokr",
   "keywords": [
-    "Electron",
-    "quick",
+    "docker",
+    "tray",
     "start",
-    "tutorial",
-    "demo"
+    "stop",
+    "containers"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.4",
+    "electron-builder": "^20.10.0"
   },
   "dependencies": {
     "node-docker-api": "^1.1.22",
