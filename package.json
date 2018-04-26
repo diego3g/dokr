@@ -1,10 +1,13 @@
 {
   "name": "dokr",
+  "productName": "Dokr",
   "version": "0.0.1",
   "description": "Start/stop docker containers from tray menu",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -l -m"
   },
   "repository": "https://github.com/diego3g/dokr",
   "keywords": [
@@ -14,7 +17,11 @@
     "stop",
     "containers"
   ],
-  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
+  "author": {
+    "name": "Diego Fernandes",
+    "email": "diego.schell.f@gmail.com",
+    "url": "https://rocketseat.com.br"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.8.4",
@@ -23,5 +30,23 @@
   "dependencies": {
     "node-docker-api": "^1.1.22",
     "path": "^0.12.7"
+  },
+  "build": {
+    "appId": "com.dokr",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "extendInfo": {
+        "LSUIElement": 1
+      }
+    },
+    "dmg": {
+      "window": {
+        "width": 537,
+        "height": 350
+      }
+    },
+    "linux": {
+      "category": "Utility"
+    }
   }
 }
