@@ -7,7 +7,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -l -m"
+    "dist": "electron-builder -l -m",
+    "dist:linux": "electron-builder --linux"
   },
   "repository": "https://github.com/diego3g/dokr",
   "keywords": [
